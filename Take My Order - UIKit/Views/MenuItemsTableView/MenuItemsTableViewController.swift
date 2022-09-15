@@ -10,6 +10,7 @@ import UIKit
 class MenuItemsTableViewController: UITableViewController {
   
   var menu = MenuCard()
+  var selectedMenuItem: MenuItem?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,6 +29,14 @@ class MenuItemsTableViewController: UITableViewController {
     cell.cellLabel.text = menu.menuItems[indexPath.row].name
     cell.priceLabel.text = String(menu.menuItems[indexPath.row].price.formatted(.currency(code: "usd")))
     cell.cellStack.layer.cornerRadius = 10.0
+    cell.menuItem = menu.menuItems[indexPath.row]
     return cell
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "ShowDetail" {
+      guard let cell = sender as? MenuItemCell, let controller = segue.destination as? ViewController else { return }
+      controller.menuItem = cell.menuItem
+    }
   }
 }

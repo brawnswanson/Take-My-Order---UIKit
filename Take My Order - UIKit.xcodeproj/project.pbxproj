@@ -18,6 +18,7 @@
 		C4578B9D28CF2D25005A4D31 /* MenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4578B9C28CF2D25005A4D31 /* MenuCard.swift */; };
 		C4578B9F28CF2D4B005A4D31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4578B9E28CF2D4B005A4D31 /* Constants.swift */; };
 		C4578BA228CF7065005A4D31 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4578BA128CF7065005A4D31 /* MenuItemCell.swift */; };
+		C4578BAC28CF7A71005A4D31 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4578BAA28CF7A71005A4D31 /* MenuDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C4578B9C28CF2D25005A4D31 /* MenuCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCard.swift; sourceTree = "<group>"; };
 		C4578B9E28CF2D4B005A4D31 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4578BA128CF7065005A4D31 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		C4578BAA28CF7A71005A4D31 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				C4578B8628CF13AB005A4D31 /* ViewController.swift */,
+				C4578BAA28CF7A71005A4D31 /* MenuDetailView.swift */,
 			);
 			path = MenuItemDetailView;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				C4578B8728CF13AB005A4D31 /* ViewController.swift in Sources */,
 				C4578BA228CF7065005A4D31 /* MenuItemCell.swift in Sources */,
 				C4578B8328CF13AB005A4D31 /* AppDelegate.swift in Sources */,
+				C4578BAC28CF7A71005A4D31 /* MenuDetailView.swift in Sources */,
 				C4578B8528CF13AB005A4D31 /* SceneDelegate.swift in Sources */,
 				C4578B9828CF2C5F005A4D31 /* MenuItemsTableViewController.swift in Sources */,
 				C4578B9F28CF2D4B005A4D31 /* Constants.swift in Sources */,

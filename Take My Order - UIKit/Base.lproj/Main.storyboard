@@ -65,7 +65,7 @@
                                     <outlet property="cellLabel" destination="mdr-mU-4NT" id="qBE-2l-qah"/>
                                     <outlet property="cellStack" destination="U3S-c7-qk6" id="nZk-Qo-ufN"/>
                                     <outlet property="priceLabel" destination="JBy-cZ-gyV" id="6LD-jL-MPW"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowMenuItemDetail" id="kCs-62-RJu"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="2Nw-rr-I3g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -83,18 +83,35 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Take_My_Order___UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-S8-gsZ">
+                                <rect key="frame" x="77" y="162" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="YEb-Qw-0oO" kind="embed" destinationCreationSelector="ShowSwiftUI:" id="c6v-up-h3S"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MtP-d9-gQP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="68"/>
+            <point key="canvasLocation" x="1462.3188405797102" y="67.633928571428569"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="00D-QL-8pg">
+            <objects>
+                <hostingController id="YEb-Qw-0oO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="652-kj-CNM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="68"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jwb-0t-xsm">

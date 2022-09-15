@@ -11,4 +11,6 @@ class MenuItemCell: UITableViewCell {
   @IBOutlet var cellLabel: UILabel!
   @IBOutlet var cellStack: UIStackView!
   @IBOutlet var priceLabel: UILabel!
+  
+  var menuItem: MenuItem?
 }
